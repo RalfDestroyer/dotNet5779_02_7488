@@ -11,7 +11,9 @@ namespace dotNet5779_02_7488
     {
         #region fields
         private List<Card> Cards = new List<Card>();
+        #endregion
 
+        #region ctor
         public CardStock()
         {
             //cards in card stock from [i] up to 15
@@ -28,6 +30,7 @@ namespace dotNet5779_02_7488
         #region metods
         public override string ToString()
         {
+
             string str = null;
             foreach (Card klaf in Cards)
             {
@@ -128,5 +131,6 @@ namespace dotNet5779_02_7488
             }
         }
         #endregion
+
     }
 }

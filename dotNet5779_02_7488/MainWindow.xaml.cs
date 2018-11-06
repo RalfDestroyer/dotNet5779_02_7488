@@ -21,13 +21,17 @@ namespace dotNet5779_02_7488
     /// </summary>
     public partial class MainWindow : Window
     {
+        //field
+        Game nGame;
+        
+        //ctor
         public MainWindow()
         {
             InitializeComponent();
+            nGame = new Game("name1", "name2");
         }
 
-        Game nGame = new Game("name1", "name2");
-        
+        //methods
         private void b_result_Click(object sender, RoutedEventArgs e)
         {
             while (nGame.endGame() != true)
